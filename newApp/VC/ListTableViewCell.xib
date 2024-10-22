@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="ListTableViewCell" customModule="newApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="317" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrk-Eg-3Q2">
+                        <rect key="frame" x="20" y="33.333333333333336" width="42" height="20.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1rA-oY-Mx4">
+                        <rect key="frame" x="277.33333333333331" y="26.666666666666668" width="19.666666666666686" height="34.333333333333329"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="09s-mK-TyT"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qrk-Eg-3Q2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="1iT-Zp-Eiw"/>
+                    <constraint firstAttribute="trailing" secondItem="1rA-oY-Mx4" secondAttribute="trailing" constant="20" id="2AA-h5-sX5"/>
+                    <constraint firstItem="Qrk-Eg-3Q2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9JP-pQ-A9g"/>
+                    <constraint firstItem="1rA-oY-Mx4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CNs-xv-2RE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="wordLabel" destination="Qrk-Eg-3Q2" id="Oc4-hP-bK0"/>
+            </connections>
+            <point key="canvasLocation" x="78.625954198473281" y="34.154929577464792"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
+    </resources>
+</document>
